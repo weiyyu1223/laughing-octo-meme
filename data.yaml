@@ -1,0 +1,12 @@
+# 数据集配置文件
+# 图片和标注都在 E 盘
+
+path: E:/phone                    # 数据集根目录
+
+train: images/train               # 训练图片路径（相对于 path）
+val: images/val                   # 验证图片路径（相对于 path）
+
+# 标注文件会自动在 labels/train 和 labels/val 中查找
+
+nc: 2                             # 类别数量（手机 + 书本）
+names: ['phone', 'book']          # 类别名称，0:phone, 1:book
